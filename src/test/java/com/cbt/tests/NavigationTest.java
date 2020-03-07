@@ -12,10 +12,10 @@ import java.util.List;
 
 public class NavigationTest {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws Exception {
 
 
-        List<String> browserList = new ArrayList<>(Arrays.asList("chrome", "edge" , "firefox"));
+        List<String> browserList = new ArrayList<>(Arrays.asList("chrome", "edge" , "firefox","safari"));
 
         for (String eachBrowser : browserList ) {
 
