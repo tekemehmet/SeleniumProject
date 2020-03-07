@@ -10,8 +10,10 @@ public class TitleVerification {
 
     public static void main(String[] args) throws Exception {
 
-        WebDriverManager.chromedriver().version("79.0").setup();
-        WebDriver driver = new ChromeDriver();
+        //WebDriverManager.chromedriver().version("79.0").setup();
+      //  WebDriver driver = new ChromeDriver();
+
+        WebDriver driver = BrowserFactory.getDriver("chrome");
 
         List<String> urls = Arrays.asList("http://practice.cybertekschool.com/",
                 "http://practice.cybertekschool.com/dropdown",
