@@ -10,8 +10,11 @@ public class TitleVerification {
 
     public static void main(String[] args) throws Exception {
 
-        //WebDriverManager.chromedriver().version("79.0").setup();
-      //  WebDriver driver = new ChromeDriver();
+        TitleUnique("chrome");
+
+    }
+
+    public static void TitleUnique(String browserName) throws Exception {
 
         WebDriver driver = BrowserFactory.getDriver("chrome");
 
@@ -30,7 +33,6 @@ public class TitleVerification {
         }
 
         System.out.println(titles);
-
 
         if (titles.size()==1){
             System.out.println("All have the same title");
